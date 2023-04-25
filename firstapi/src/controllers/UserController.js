@@ -24,6 +24,6 @@ module.exports = {
             return response.send(400, { error: 'User not found' });
         }
         
-        response.send(200, sortedUsers);
+        response.send(200, user);
     }
 };
