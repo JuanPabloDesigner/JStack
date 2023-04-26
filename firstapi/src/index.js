@@ -33,7 +33,9 @@ const server = http.createServer((request, response) => {
         };
 
         if (['POST', 'PUT', 'PATCH'].includes(request.method)) {
-            bodyParser(request, () => route.handler(request, response));
+            bodyParser(request, () => {
+                route.handler(request, response)
+                });
         } else {
             route.handler(request, response);
         }
