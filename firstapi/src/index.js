@@ -20,7 +20,7 @@ const server = http.createServer((request, response) => {
     }
 
     const route = routes.find((routeObj) => (
-        routeObj.endpoint == pathname && routeObj.method == request.method
+        routeObj.endpoint === pathname && routeObj.method === request.method
     ));
 
     if (route) {
