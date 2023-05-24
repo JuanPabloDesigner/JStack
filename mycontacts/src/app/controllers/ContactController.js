@@ -1,6 +1,6 @@
 class ContactController {
   index(request, response) {
-    response.send('Sent from Contact Controller')
+    response.send('Sent from Contact Controller');
   }
 }
 
